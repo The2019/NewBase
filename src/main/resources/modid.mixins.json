@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.The2019.NewBase.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "RenderMixin",
+    "TickMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
