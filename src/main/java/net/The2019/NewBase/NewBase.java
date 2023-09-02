@@ -27,14 +27,4 @@ public class NewBase implements ModInitializer {
 	@Override
 	public void onInitialize() {
 	}
-
-	public static void onRender(){
-		ArrayList<BlockEntity> blockEntities = ModuleUtils.getTileEntities().collect(Collectors.toCollection(ArrayList::new));
-		for(BlockEntity blockEntity : blockEntities) {
-			if(blockEntity instanceof ChestBlockEntity || blockEntity instanceof TrappedChestBlockEntity) {
-				Box box = new Box(blockEntity.getPos());
-				this.getRenderUtils().draw3DBox(matrixStack, box, currentColor, 0.2f);
-			}
-		}
-	}
 }
